@@ -1,0 +1,418 @@
+* , 
+*::after,
+*::before {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 300;
+    color: #2c2b2b;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+.container{
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header {
+    background-image: url(../images/header.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    min-height: 700px;
+    color: #fff;
+
+}
+
+.header-top {
+    padding: 47px 0 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tel {
+    font-size: 36px;
+    line-height: 54px;
+    font-weight: 400;
+}
+
+.header-content {
+    position: relative;
+}
+
+.header-title {
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 106px;
+    text-transform: uppercase;
+
+}
+
+.header-subtitle {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 53px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.header-text { 
+    max-width: 800px;
+    margin-bottom: 32px;
+}
+
+.button {
+    tab-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    padding: 14px 54px 15px;
+    background-color: #230885;
+}
+
+.header-social {
+    padding: 70px 0 20px 65px;
+    display: flex;
+    align-items: center;
+
+}
+
+.header-social-link {
+    margin-right: 10px;
+}
+
+.header-images {
+    position: absolute;
+    right: -150px;
+    bottom: -550px;
+}
+
+.services {
+    padding-top: 350px;
+}
+
+.title {
+    color: #0f0811;
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.title::after {
+    content: "";
+    height: 3px;
+    width: 80px;
+    background-color: #230885;
+    position: absolute;
+    top: 10px;
+    margin-left: 20px;
+
+}
+
+.services-inner {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.services-content {
+    width: 505px;
+    margin-right: 96px;
+}
+
+
+.services-content-title {
+    color: #5a0d67;
+    line-height: 27px;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.services-content-textbox {
+    margin-bottom: 57px;
+}
+
+.services-content-text {
+    margin-bottom: 12px;
+}
+
+.button-decor {
+    margin-top: -7px;
+    color: #fff;
+    /* position: relative; */
+}
+
+.button-decor:hover{
+    background-color: #880a88;
+}
+
+/* .button-decor::after {
+    content:"ЖМИ";
+    color: #c4c4c4;
+    position: absolute;
+    margin-left: 130px;
+}
+
+.button-decor::before {
+    content: "";
+    width: 80px;
+    height: 2px;
+    background-color: #c4c4c4;
+    position: absolute;
+    right: -60px;
+    top: 24px;
+} */
+
+.services-list {
+    list-style: none;
+    counter-reset: myCounter;
+}
+
+.services-item {
+    counter-increment:myCounter;
+    border: 1px solid #c4c4c4;
+    margin-bottom: 12px;
+    padding: 10px 15px 10px 113px;
+    width: 450px;
+    position: relative;
+    transition: all .5s;
+
+}
+
+.services-item::before {
+    content: '0' counter(myCounter);
+    position: absolute;
+    left: 20px;
+    font-size: 36px;
+    line-height: 54px;
+    font-weight: 400;
+    color: #c4c4c4;
+    transform: rotate(270deg);
+    transition: all .5s;
+}
+
+
+.services-item:hover {
+    border: 2px solid #5a0d67;
+    width: 500px;
+
+}
+
+.services-item:hover .servives-item-title {
+    color: #5a0d67;
+
+}
+
+.servives-item:hover::before {
+    color:#5a0d67;
+}
+
+.services-item-title {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.benefits {
+    margin-bottom: 100px;
+
+}
+
+.benefits-inner {
+    display: flex;
+    
+}
+
+.benefits-images {
+    margin-right: 95px;
+
+}
+
+.benefits-content {
+    width: 100%;
+    color: #fff;
+}
+
+.benefits-title {
+    margin-left: 185px;
+
+}
+
+.benefits-list {
+    list-style: none;
+    background-color: #5a0d67;
+    padding: 23px 0 25px 185px;
+
+}
+
+.benefits-item {
+   width: 320px;
+   margin-bottom: 20px;
+}
+
+ .benefits-item-num {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 54p;
+ } 
+
+.benefits-item-title {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+}
+
+.benefits-item-text {
+    color: #c4c4c4;
+
+}
+
+.carousel {
+    margin-bottom: 100px;
+
+}
+
+.carousel-inner {
+    margin: 0 -7px;
+}
+
+.carousel-item-box:hover {
+    color: #fff;
+    background-color: #6d0e75;
+    border-color:#5a0d67 ;
+    
+}
+
+.carousel-item-box {
+    border: 1px solid #c4c4c4;
+    padding: 6px 6px 16px 6px;
+    text-align: center;
+    margin: 0 7px;
+    transition: all .5s;
+}
+
+.carousel-item-img {
+    max-width: 100%;
+    margin-bottom: 23px;
+}
+
+.carousel-item-title {
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.carousel .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    list-style: none;
+}
+
+.carousel .slick-dots button {
+    font-size: 0;
+    border: none;
+    padding: 0;
+    margin: 0 10px;
+    width: 50px;
+    height: 1px;
+    background-color: #c4c4c4;
+
+}
+
+.carousel .slick-active button {
+    background-color: #5a0d67;
+    height: 3px;
+}
+
+.contacts-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts-list {
+    list-style: none;
+}
+
+.contacts-item {
+    margin-bottom: 20px;
+}
+
+.contacts-item-title {
+    color: #5a0d67;
+}
+
+.contacts-form {
+    background-color: #5a0d67;
+    padding: 50px 75px 57px;
+    text-align: center;
+}
+
+.contacts-title {
+    color:rgb(224, 21, 21);
+    margin-bottom: 16px;
+    margin-left: 53px;
+    text-align: left;
+}
+
+.contacts-title::after{
+    background-color: #fff;
+}
+
+.contacts_input{
+    background-color: transparent;
+    width: 450px;
+    height: 75px;
+    color: #fff;
+    border:  1px solid #fff;
+    margin-bottom: 12px;
+    display: block;
+    font-size: 24px;
+    padding:  0 15px;
+}
+
+.contacts_input::placeholder{
+    text-align: center;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 300;
+    color: #c4c4c4;   
+}
+
+
+.contacts__btn{
+    border: none;
+    color: #fff;
+    margin-top: 78px;
+    cursor: pointer;
+}
+.contacts__btn:hover{
+    background-color: #3c2a7a;
+}
+
+.footer{
+    background-color: #5a0d67;
+}
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    height: 100px;
+}
+
+.logo>h1 {
+    font-size: 40px;
+}
